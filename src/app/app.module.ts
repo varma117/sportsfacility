@@ -11,7 +11,7 @@ import { SignuppageComponent } from './components/signuppage/signuppage.componen
 import { AboutComponent } from './components/about/about.component';
 import { BookfacilityComponent } from './components/bookfacility/bookfacility.component';
 import { UpdateplayerdetailsComponent } from './components/updateplayerdetails/updateplayerdetails.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +22,13 @@ import { UpdateplayerdetailsComponent } from './components/updateplayerdetails/u
     AboutComponent,
     BookfacilityComponent,
     UpdateplayerdetailsComponent
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

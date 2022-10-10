@@ -1,1 +1,102 @@
-<p>updateplayerdetails works!</p>
+<!-- Section: Design Block -->
+<section class="text-center">
+    <!-- Background image -->
+    <div class="p-5 bg-image" style="
+          background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');
+          height: 300px;
+          "></div>
+    <!-- Background image -->
+  
+    <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+          margin-top: -100px;
+          background: hsla(0, 0%, 100%, 0.8);
+          backdrop-filter: blur(30px);
+          ">
+      <div class="card-body py-5 px-md-5">
+  
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold mb-5">Update your details</h2>
+            <form>
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" [(ngModel)] =player.firstName name= "firstName"  id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">First name</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" [(ngModel)] =player.lastName name = "lastName" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Last name</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="date" [(ngModel)] =player.dob name= "dob" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">Date of birth</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" [(ngModel)] =player.address name="address" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Address</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" [(ngModel)] =player.state name = "state" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">State</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" [(ngModel)] =player.country name = "country" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Country</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" [(ngModel)] =player.pan name = "pan" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1"> PAN</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" [(ngModel)] =player.mobile name = "mobile" id="form3Example2" class="form-control" />
+                      <label class="form-label" for="form3Example2">Mobile</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" [(ngModel)] =player.email name="email" id="form3Example2" class="form-control" />
+                      <label class="form-label" for="form3Example2">Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" [(ngModel)] =player.password name = "password" id="form3Example2" class="form-control" />
+                      <label class="form-label" for="form3Example2">Password</label>
+                    </div>
+                  </div>
+              </div>
+  
+              <!-- Submit button -->
+              <button type="submit" (click)="update(player)" class="btn btn-primary btn-block mb-4">
+                Update Details
+              </button>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
