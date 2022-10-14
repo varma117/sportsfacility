@@ -26,7 +26,7 @@ mobile :""
 }
 
 save(){
-  const observable = this.playerService.registorPlayer(this.playerDetails)
+  const observable = this.playerService.registorPlayer(this.playerDetails);
   observable.subscribe(
     (response: any)=>{
       console.log(response);

@@ -1,13 +1,18 @@
 <h4 style="color:rgb(8, 80, 68);text-align: center;">Provide Slote Details</h4>
 
 <div style="align-items: center;">
-  <label for="exampleFormControlInput1" class="form-label">Name</label>
-  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="enter name of the game">
-  <label for="exampleFormControlInput1" class="form-label">Select game date</label>
-  <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="select date">
-  <label for="exampleFormControlInput1" class="form-label">Select game time</label>
-  <input type="time" class="form-control" id="exampleFormControlInput1" placeholder="select date">
-  <br>
-  <input class="btn btn-primary" type="submit" value="Book">
+  <label for="exampleFormControlInput1" class="form-label">GameName</label>
+  <input type="text" class="form-control" [(ngModel)]=facility.gameName id="exampleFormControlInput1" placeholder="enter name of the game">
+  <label for="exampleFormControlInput1" class="form-label">firstName</label>
+  <input type="text" class="form-control" [(ngModel)]=facility.firstName  id="exampleFormControlInput1" placeholder="first name of player">
+  <label for="exampleFormControlInput1" class="form-label">lastName</label>
+  <input type="text" class="form-control"  [(ngModel)]=facility.lastName id="exampleFormControlInput1" placeholder="last name of player">
+  <label for="exampleFormControlInput1" class="form-label">dateofbirth</label>
+  <input type="date" class="form-control" [(ngModel)]=facility.dob id="exampleFormControlInput1" placeholder="date of birth">
 
+  <label for="exampleFormControlInput1" class="form-label">Select game date and time</label>
+  <input input type="datetime-local" [(ngModel)]=facility.dateOfGame id="myLocalDate" class="form-control"  placeholder="select date and time">
+  <br>
+  <input class="btn btn-primary"  (click)="bookFacility()" type="submit" value="Book">
+ <!---->
 </div>
