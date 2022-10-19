@@ -8,7 +8,7 @@ import Users from "./entity/Users";
 
 const signup_URL = "http://localhost:9909/registerplayer";
 const update_URL ="http://localhost:9909/updatedetails/";
-const facility_URL = "http://localhost:9909/registorfacility";
+const facility_URL = "http://localhost:9909/slotebooking";
 const login_URL = "http://localhost:9909/login";
 
 @Injectable({

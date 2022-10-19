@@ -30,7 +30,7 @@ save(){
   observable.subscribe(
     (response: any)=>{
       console.log(response);
-     
+      alert("Player registored successfully ")
     },
     function(error){
       console.log(error);

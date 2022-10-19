@@ -16,7 +16,7 @@ bookFacility(){
   observable.subscribe(
     (response: any)=>{
       console.log(response);
-     
+      alert("slote has booked successfully ");
     },
     function(error){
       console.log(error);
